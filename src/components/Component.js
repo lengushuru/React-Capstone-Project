@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 function Component() {
   return (
     <div>Component</div>
-  )
+  );
 }
 
-export default Component
+export default Component;
