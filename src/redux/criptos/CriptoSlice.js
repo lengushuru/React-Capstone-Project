@@ -4,6 +4,7 @@ import axios from 'axios';
 const getCryptos = createAsyncThunk('fetch/crypto', async () => {
   try {
     const response = await axios.get('https://api.coingecko.com/api/v3/coins/');
+    console.log(response.data);
     return response.data;
   } catch (error) {
     return error;
