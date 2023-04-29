@@ -187,6 +187,6 @@ Original design idea by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://github.com/lengushuru/React-Capstone-Project/blob/empty-details-home/MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
