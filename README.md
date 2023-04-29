@@ -55,7 +55,7 @@ A mobile web platform designed to provide users with real-time updates on the la
 
 
 - [see live](https://comforting-stardust-1a5e6d.netlify.app/)
-- [Loom Video]()
+- [Loom Video](https://www.loom.com/share/d0290071ee984952a43185d33951c757)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
