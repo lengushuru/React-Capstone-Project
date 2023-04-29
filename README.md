@@ -54,8 +54,8 @@ A mobile web platform designed to provide users with real-time updates on the la
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link]()
-- [Loom Video]()
+- [see live](https://comforting-stardust-1a5e6d.netlify.app/)
+- [Loom Video](https://www.loom.com/share/d0290071ee984952a43185d33951c757)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -187,6 +187,6 @@ Original design idea by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://github.com/lengushuru/React-Capstone-Project/blob/empty-details-home/MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
