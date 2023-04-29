@@ -1,13 +1,33 @@
-import './App.css';
-import Home from './components/Home';
-import Details from './components/Details';
+import {
+  BrowserRouter, Routes, Route,
+  //  Link,
+} from 'react-router-dom';
+import { Provider } from 'react-redux';
+import Home from './pages/Home';
+import Details from './pages/Details';
+import Navbar from './components/Navbar';
+import store from './redux/store';
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-      <Details />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <header className="App-header">
+          <Navbar />
+        </header>
+        <Routes>
+          <Route
+            path="/"
+            element={(
+              <Provider store={store}>
+                <Home />
+              </Provider>
+          )}
+          />
+          <Route path="/details/:criptoId" element={<Details />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
