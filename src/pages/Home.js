@@ -53,8 +53,8 @@ const Home = () => {
             <Link to={`/details/${item.id}`}>
               <img src={item.image.small} alt={item.name} />
               <div className="coin-name">
-                <h2>{item.name}</h2>
-                <p>
+                <h2 className="coin-name1">{item.name}</h2>
+                <p className="coin-price">
                   $
                   {item.market_data.current_price.usd}
                 </p>
