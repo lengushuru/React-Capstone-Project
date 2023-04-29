@@ -4,8 +4,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 const getCryptos = createAsyncThunk('fetch/crypto', async () => {
   try {
     const response = await fetch('https://api.coingecko.com/api/v3/coins/');
-    const  data = await response.json();
-    console.log(response);
+    const data = await response.json();
     return data;
   } catch (error) {
     return error;

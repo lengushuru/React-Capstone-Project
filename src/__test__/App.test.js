@@ -7,11 +7,10 @@ import App from '../App';
 describe('App', () => {
   it('renders the home page', () => {
     const tree = render(
-        <Provider store={store}>
-          <App />
-        </Provider>
+      <Provider store={store}>
+        <App />
+      </Provider>,
     );
     expect(tree).toMatchSnapshot();
   });
 });
-

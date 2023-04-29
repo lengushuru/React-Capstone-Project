@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, waitFor } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
@@ -15,7 +15,7 @@ describe('Home component', () => {
           <Home />
         </Router>
       </Provider>,
-      { initialState: mockState }
+      { initialState: mockState },
     );
     expect(screen.getByText('Loading...')).toBeInTheDocument();
   });
@@ -28,16 +28,16 @@ describe('Home component', () => {
             id: 'bitcoin',
             name: 'Bitcoin',
             image: { small: 'https://bitcoin.com' },
-            market_data: { current_price: { usd: 50000 } }
+            market_data: { current_price: { usd: 50000 } },
           },
           {
             id: '',
             name: 'Ethereum',
             image: { small: 'https://ethereum.com' },
-            market_data: { current_price: { usd: 2000 } }
+            market_data: { current_price: { usd: 2000 } },
           },
-        ]
-      }
+        ],
+      },
     };
     render(
       <Provider store={store}>
@@ -45,7 +45,7 @@ describe('Home component', () => {
           <Home />
         </Router>
       </Provider>,
-      { initialState: mockState }
+      { initialState: mockState },
     );
   });
 });

@@ -4,7 +4,6 @@ const getCriptoDetails = createAsyncThunk('detail/getCriptoDetails', async (coin
   try {
     const response = await fetch(`https://api.coingecko.com/api/v3/coins/${coinId}`);
     const data = await response.json();
-    console.log(data);
     return [
       {
         id: data.id,

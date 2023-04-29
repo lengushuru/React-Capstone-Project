@@ -11,7 +11,6 @@ const Details = () => {
   }, [dispatch, criptoId]);
 
   const { detailData, loading } = useSelector((state) => state.detail);
-  console.log(detailData);
   if (!loading && detailData.length > 0) {
     return (
       <div>

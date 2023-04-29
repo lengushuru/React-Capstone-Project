@@ -7,28 +7,37 @@ const Home = () => {
   let flag = 0;
   let first = true;
   const toggle = () => {
-    const color = flag === 0 && first ? '' : flag < 3 ? '#c50876' : '';
+    let color = '';
+    if (flag === 0 && first) {
+      color = '';
+    } else if (flag < 3) {
+      color = '#c50876';
+    } else {
+      color = '';
+    }
+
     first = false;
 
     if (flag === 4) {
       flag = 0;
     }
     flag += 1;
+
     return color;
   };
+
   const [search, setSearch] = useState('');
 
   if (cyptoData.length === 0) {
     return <h1>Loading...</h1>;
   }
 
-
   const filteredCoins = cyptoData.filter((coin) => coin.name
     .toLowerCase().includes(search.toLowerCase()));
   const handleChange = (e) => {
     setSearch(e.target.value);
   };
- 
+
   return (
     <div className="home-content">
       <input type="text" placeholder="Search" className="search" onChange={handleChange} />
