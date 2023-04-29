@@ -1,11 +1,12 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import axios from 'axios';
+// import axios from 'axios';
 
 const getCryptos = createAsyncThunk('fetch/crypto', async () => {
   try {
-    const response = await axios.get('https://api.coingecko.com/api/v3/coins/');
-    console.log(response.data);
-    return response.data;
+    const response = await fetch('https://api.coingecko.com/api/v3/coins/');
+    const  data = await response.json();
+    console.log(response);
+    return data;
   } catch (error) {
     return error;
   }
