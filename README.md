@@ -54,7 +54,7 @@ A mobile web platform designed to provide users with real-time updates on the la
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link]()
+- [see live](https://comforting-stardust-1a5e6d.netlify.app/)
 - [Loom Video]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
